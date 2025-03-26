@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Doctors - Ayurveda Wellness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <!-- Navbar -->
+    <!-- Navbar -->
+<!-- Header -->
+<header class="bg-[#14532d] text-white py-4 px-6 flex justify-between items-center">
+    <img src="C:\Users\admin\Desktop\logoa.png" alt="Ayurveda Logo" class="w-32 h-12 mr-16 rounded-full">
+
+    <h1 class="text-3xl font-bold">RR Ayurvedam</h1>
+    <nav>
+        <ul class="flex space-x-6">
+            <li><a href="Home.html" class="hover:text-yellow-400">Home</a></li>
+            <li><a href="about.html" class="hover:text-yellow-400">About Us</a></li>
+            <li class="relative">
+                <div class="flex items-center justify-between cursor-pointer hover:text-yellow-400" onclick="toggleDropdown()">
+                    <a href="swarnaprashna.html">Swarnaprashna</a>
+                    <span class="ml-2 text-[10px]">▼</span>
+                </div>
+                <ul id="dropdown-menu" class="hidden bg-[#14532d] absolute left-0 mt-2 w-48 shadow-lg rounded-md">
+                    <li>
+                        <a href="employee.html" class="block px-4 py-2 text-white hover:text-yellow-400">Employee Page</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="consulting.html" class="hover:text-yellow-400">Consulting</a></li>
+            <li><a href="services.html" class="hover:text-yellow-400">Our Services</a></li>
+            <li><a href="doctors.html" class="hover:text-yellow-400">Our Doctors</a></li>
+            <li class="relative">
+                <div class="flex items-center justify-between cursor-pointer hover:text-yellow-400" onclick="toggleContactDropdown()">
+                    <a href="contact.html">Contact</a>
+                    <span class="ml-2 text-[10px]">▼</span>
+                </div>
+                <ul id="contact-dropdown-menu" class="hidden bg-[#14532d] absolute left-0 mt-2 w-48 shadow-lg rounded-md">
+                    <li>
+                        <a href="blog.html" class="block px-4 py-2 text-white hover:text-yellow-400">Blog</a>
+                    </li>
+                    <li>
+                        <a href="support.html" class="block px-4 py-2 text-white hover:text-yellow-400">Support Us</a>
+                    </li>
+                </ul>
+            </li>
+            
+            
+        </ul>
+    </nav>
+    <button onclick="toggleTheme()" class="p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition">
+        🌙
+    </button>
+</header>
+    <!-- Header -->
+    <header class="bg-white text-black py-6 text-center">
+        <h1 class="text-3xl font-bold">Meet Our Experts</h1>
+    </header>
+    <!-- Doctor Profile -->
+    <section class="max-w-4xl mx-auto my-10 p-6 bg-white shadow-lg rounded-lg">
+        <div class="text-center">
+            <img src="C:\Users\admin\Desktop\Ra.png" alt="Dr. Ravindar Reddy" class="w-40 h-40 mx-auto rounded-full shadow-md">
+            <h2 class="text-2xl font-bold text-green-900 mt-4">Dr. Ravindar Reddy</h2>
+            <p class="text-gray-700 italic">Ayurvedic Healing Specialist</p>
+        </div>
+
+        <p class="mt-6 text-gray-700">
+            Dr. Ravindar Reddy is a highly esteemed Ayurvedic physician, renowned for his expertise in holistic healing and his commitment to promoting health and wellness through Ayurveda. With deep knowledge and years of dedicated practice, he blends traditional wisdom with modern approaches to ensure long-term well-being.
+        </p>
+
+        <h3 class="text-xl font-semibold text-green-900 mt-6">Areas of Expertise</h3>
+
+        <div class="mt-4">
+            <h4 class="text-lg font-semibold text-green-800">1. Ayurveda Healing Specialist</h4>
+            <ul class="list-disc pl-6 text-gray-700">
+                <li>Expert in holistic healing, focusing on body, mind, and spirit balance.</li>
+                <li>Treatments target the root cause of illnesses for sustainable health.</li>
+            </ul>
+        </div>
+
+        <div class="mt-4">
+            <h4 class="text-lg font-semibold text-green-800">2. Proficiency in Dhivavyapashraya and Yukti Vyapashraya</h4>
+            <ul class="list-disc pl-6 text-gray-700">
+                <li><strong>Dhivavyapashraya (Spiritual Therapy):</strong> Uses mantras, rituals, and meditation for inner peace.</li>
+                <li><strong>Yukti Vyapashraya (Rational Therapy):</strong> Implements herbal remedies, personalized diets, and detox therapies.</li>
+            </ul>
+        </div>
+
+        <div class="mt-4">
+            <h4 class="text-lg font-semibold text-green-800">3. Specialist in Sattvavajaya (Mind Management Therapy)</h4>
+            <ul class="list-disc pl-6 text-gray-700">
+                <li>Focuses on mental and emotional well-being through counseling and mindfulness.</li>
+                <li>Empowers individuals to overcome psychological challenges.</li>
+            </ul>
+        </div>
+
+        <div class="mt-4">
+            <h4 class="text-lg font-semibold text-green-800">4. Promoter of SVARNAPRASHAN</h4>
+            <ul class="list-disc pl-6 text-gray-700">
+                <li>Advocates Svarnaprashana, an Ayurvedic immunization practice for children.</li>
+                <li>Gold-based herbal formulations enhance immunity and cognitive abilities.</li>
+            </ul>
+        </div>
+
+        <p class="mt-6 text-gray-700">
+            Dr. Reddy’s compassionate approach and profound knowledge continue to transform lives, promoting a balanced and healthy way of living.
+        </p>
+        
+        <div class="text-center mt-6">
+            <a href="schedule.html" class="bg-green-700 text-white px-6 py-2 rounded-lg hover:bg-green-800">Book a Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white text-center py-6 mt-10">
+        <p>&copy; 2025 Ayurveda Wellness. All Rights Reserved.</p>
+        <p>Email: contact@ayurvedawellness.com | Phone: +91 98765 43210</p>
+    </footer>
+    <script>
+        function toggleDropdown() {
+            document.getElementById("dropdown-menu").classList.toggle("hidden");
+        }
+        function toggleTheme() {
+                document.body.classList.toggle('bg-gray-900');
+                document.body.classList.toggle('text-white');
+            }
+            function toggleContactDropdown() {
+            const menu = document.getElementById("contact-dropdown-menu");
+            menu.classList.toggle("hidden");
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayurvedic Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-50">
+    
+    <!-- Header -->
+    <!-- Header -->
+    <header class="bg-[#14532d] text-white py-4 px-6 flex justify-between items-center">
+        <img src="C:\Users\admin\Desktop\logoa.png" alt="Ayurveda Logo" class="w-32 h-12 mr-16 rounded-full">
+ 
+        <h1 class="text-3xl font-bold">RR Ayurvedam</h1>
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a href="Home.html" class="hover:text-yellow-400">Home</a></li>
+                <li><a href="about.html" class="hover:text-yellow-400">About Us</a></li>
+                <li class="relative">
+                    <div class="flex items-center justify-between cursor-pointer hover:text-yellow-400" onclick="toggleDropdown()">
+                        <a href="swarnaprashna.html">Swarnaprashna</a>
+                        <span class="ml-2 text-[10px]">▼</span>
+                    </div>
+                    <ul id="dropdown-menu" class="hidden bg-[#14532d] absolute left-0 mt-2 w-48 shadow-lg rounded-md">
+                        <li>
+                            <a href="employee.html" class="block px-4 py-2 text-white hover:text-yellow-400">Employee Page</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="consulting.html" class="hover:text-yellow-400">Consulting</a></li>
+                <li><a href="services.html" class="hover:text-yellow-400">Our Services</a></li>
+                <li><a href="doctors.html" class="hover:text-yellow-400">Our Doctors</a></li>
+                <li class="relative">
+                    <div class="flex items-center justify-between cursor-pointer hover:text-yellow-400" onclick="toggleContactDropdown()">
+                        <a href="contact.html">Contact</a>
+                        <span class="ml-2 text-[10px]">▼</span>
+                    </div>
+                    <ul id="contact-dropdown-menu" class="hidden bg-[#14532d] absolute left-0 mt-2 w-48 shadow-lg rounded-md">
+                        <li>
+                            <a href="blog.html" class="block px-4 py-2 text-white hover:text-yellow-400">Blog</a>
+                        </li>
+                        <li>
+                            <a href="support.html" class="block px-4 py-2 text-white hover:text-yellow-400">Support Us</a>
+                        </li>
+                    </ul>
+                </li>
+                
+                
+            </ul>
+        </nav>
+        <button onclick="toggleTheme()" class="p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition">
+            🌙
+        </button>
+    </header>
+   
+    
+    <!-- Services Section -->
+    <section class="max-w-6xl mx-auto py-12">
+        <h2 class="text-3xl font-bold text-center text-green-800 mb-8">Our Services</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Service Cards -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <h3 class="text-xl font-bold text-green-700">Abhyanga (Ayurvedic Massage)</h3>
+                <p class="text-gray-600 mt-2">A full-body massage using herbal oils to relax and rejuvenate.</p>
+                <p class="text-green-600 font-bold mt-3">5000₹</p>
+                <p class="text-yellow-500 mt-2">★★★★★ (4.8)</p>
+                <a href="appointment.html" class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg">Book An Appointment</a>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <h3 class="text-xl font-bold text-green-700">Shirodhara</h3>
+                <p class="text-gray-600 mt-2">A continuous flow of warm oil on the forehead for stress relief.</p>
+                <p class="text-green-600 font-bold mt-3">4570₹</p>
+                <p class="text-yellow-500 mt-2">★★★★★ (4.9)</p>
+                <a href="appointment.html" class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg">Book An Appointment</a>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <h3 class="text-xl font-bold text-green-700">Panchakarma Detox</h3>
+                <p class="text-gray-600 mt-2">A five-step detox therapy to cleanse and balance the body.</p>
+                <p class="text-green-600 font-bold mt-3">5000₹</p>
+                <p class="text-yellow-500 mt-2">★★★★★ (5.0)</p>
+                <a href="appointment.html" class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg">Book An Appointment</a>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <h3 class="text-xl font-bold text-green-700">Herbal Steam Therapy</h3>
+                <p class="text-gray-600 mt-2">Steam therapy infused with medicinal herbs to detoxify.</p>
+                <p class="text-green-600 font-bold mt-3">4000₹</p>
+                <p class="text-yellow-500 mt-2">★★★★☆ (4.5)</p>
+                <a href="appointment.html" class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg">Book An Appointment</a>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <h3 class="text-xl font-bold text-green-700">Nasya (Sinus Treatment)</h3>
+                <p class="text-gray-600 mt-2">A therapy for sinus congestion, headaches, and mental clarity.</p>
+                <p class="text-green-600 font-bold mt-3">5600₹</p>
+                <p class="text-yellow-500 mt-2">★★★★★ (4.9)</p>
+                <a href="appointment.html" class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg">Book An Appointment</a>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <h3 class="text-xl font-bold text-green-700">Ayurvedic Diet Consultation</h3>
+                <p class="text-gray-600 mt-2">Personalized diet plans based on Ayurvedic principles.</p>
+                <p class="text-green-600 font-bold mt-3">3000₹</p>
+                <p class="text-yellow-500 mt-2">★★★★★ (4.7)</p>
+                <a href="appointment.html" class="mt-4 inline-block bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg">Book An Appointment</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+  <!-- Footer -->
+  <footer id="contact" class="bg-green-900 text-white py-6 text-center">
+    <p>&copy; 2025 Ayurveda Wellness. All Rights Reserved.</p>
+    <p>Email: contact@ayurvedawellness.com | Phone: +91 98765 43210</p>
+</footer>
+<script>
+    function toggleDropdown() {
+        document.getElementById("dropdown-menu").classList.toggle("hidden");
+    }
+    function toggleTheme() {
+            document.body.classList.toggle('bg-gray-900');
+            document.body.classList.toggle('text-white');
+        }
+        function toggleContactDropdown() {
+        const menu = document.getElementById("contact-dropdown-menu");
+        menu.classList.toggle("hidden");
+    }
+</script>
+    
+</body>
+</html>

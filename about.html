@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - RR Ayurvedam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-100">
+    
+    <!-- Navbar -->
+    <header class="bg-[#14532d] text-white py-4 px-6 flex justify-between items-center">
+        <img src="C:\Users\admin\Desktop\logoa.png" alt="Ayurveda Logo" class="w-32 h-12 mr-16 rounded-full">
+ 
+        <h1 class="text-3xl font-bold">RR Ayurvedam</h1>
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a href="Home.html" class="hover:text-yellow-400">Home</a></li>
+                <li><a href="about.html" class="hover:text-yellow-400">About Us</a></li>
+                <li class="relative">
+                    <div class="flex items-center justify-between cursor-pointer hover:text-yellow-400" onclick="toggleDropdown()">
+                        <a href="swarnaprashna.html">Swarnaprashna</a>
+                        <span class="ml-2 text-[10px]">▼</span>
+                    </div>
+                    <ul id="dropdown-menu" class="hidden bg-[#14532d] absolute left-0 mt-2 w-48 shadow-lg rounded-md">
+                        <li>
+                            <a href="employee.html" class="block px-4 py-2 text-white hover:text-yellow-400">Employee Page</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="consulting.html" class="hover:text-yellow-400">Consulting</a></li>
+                <li><a href="services.html" class="hover:text-yellow-400">Our Services</a></li>
+                <li><a href="doctors.html" class="hover:text-yellow-400">Our Doctors</a></li>
+                <li class="relative">
+                    <div class="flex items-center justify-between cursor-pointer hover:text-yellow-400" onclick="toggleContactDropdown()">
+                        <a href="contact.html">Contact</a>
+                        <span class="ml-2 text-[10px]">▼</span>
+                    </div>
+                    <ul id="contact-dropdown-menu" class="hidden bg-[#14532d] absolute left-0 mt-2 w-48 shadow-lg rounded-md">
+                        <li>
+                            <a href="blog.html" class="block px-4 py-2 text-white hover:text-yellow-400">Blog</a>
+                        </li>
+                        <li>
+                            <a href="support.html" class="block px-4 py-2 text-white hover:text-yellow-400">Support Us</a>
+                        </li>
+                    </ul>
+                </li>
+                
+                
+            </ul>
+        </nav>
+        <button onclick="toggleTheme()" class="p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition">
+            🌙
+        </button>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-64 flex items-center justify-center text-white" style="background-image: url('https://source.unsplash.com/1600x900/?ayurveda,herbs');">
+        <h1 class="text-5xl font-bold bg-green-900 bg-opacity-75 px-6 py-3 rounded-lg">About Us</h1>
+    </section>
+    
+    <!-- About Content -->
+    <section class="py-16 bg-white px-10 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl font-bold text-green-900">Who We Are</h2>
+            <p class="mt-4 text-gray-700">RR Ayurvedam is dedicated to bringing the ancient wisdom of Ayurveda to modern life. Our goal is to provide natural, holistic healing through traditional Ayurvedic practices, therapies, and personalized treatments.</p>
+        </div>
+        
+        <div class="mt-12 flex flex-col md:flex-row justify-center items-center gap-8">
+            <div class="p-6 bg-green-100 rounded-lg shadow-lg text-center md:w-1/3 h-full flex flex-col justify-center">
+                <h3 class="text-2xl font-semibold">Our Vision</h3>
+                <p class="mt-2 text-gray-700">To promote wellness through natural healing and help individuals achieve a balanced and healthy lifestyle.</p>
+            </div>
+            <div class="p-6 bg-green-100 rounded-lg shadow-lg text-center md:w-1/3 h-full flex flex-col justify-center">
+                <h3 class="text-2xl font-semibold">Our Mission</h3>
+                <p class="mt-2 text-gray-700">To offer authentic Ayurvedic treatments using time-tested herbal formulations and expert guidance.</p>
+            </div>
+        </div>
+        
+    </section>
+    
+    <!-- Footer -->
+    <footer id="contact" class="bg-green-900 text-white py-6 text-center">
+        <p>&copy; 2025 RR Ayurvedam. All Rights Reserved.</p>
+        <p>Email: contact@ayurvedawellness.com | Phone: +91 98765 43210</p>
+    </footer>
+    <script>
+        function toggleDropdown() {
+            document.getElementById("dropdown-menu").classList.toggle("hidden");
+        }
+        function toggleTheme() {
+                document.body.classList.toggle('bg-gray-900');
+                document.body.classList.toggle('text-white');
+            }
+            function toggleContactDropdown() {
+            const menu = document.getElementById("contact-dropdown-menu");
+            menu.classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>

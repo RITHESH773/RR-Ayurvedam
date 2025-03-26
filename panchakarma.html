@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panchakarma Ayurvedic Treatment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    
+    <!-- Navigation Bar -->
+    <header class="bg-[#14532d] text-white py-4 px-6 flex justify-between items-center">
+        <img src="C:\Users\admin\Desktop\logoa.png" alt="Ayurveda Logo" class="w-32 h-12 mr-16 rounded-full">
+ 
+        <h1 class="text-3xl font-bold">RR Ayurvedam</h1>
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a href="Home.html" class="hover:text-yellow-400">Home</a></li>
+                <li><a href="about.html" class="hover:text-yellow-400">About Us</a></li>
+                <li class="relative">
+                    <div class="flex items-center justify-between cursor-pointer hover:text-yellow-400" onclick="toggleDropdown()">
+                        <a href="swarnaprashna.html">Swarnaprashna</a>
+                        <span class="ml-2 text-[10px]">▼</span>
+                    </div>
+                    <ul id="dropdown-menu" class="hidden bg-[#14532d] absolute left-0 mt-2 w-48 shadow-lg rounded-md">
+                        <li>
+                            <a href="employee.html" class="block px-4 py-2 text-white hover:text-yellow-400">Employee Page</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="consulting.html" class="hover:text-yellow-400">Consulting</a></li>
+                <li><a href="services.html" class="hover:text-yellow-400">Our Services</a></li>
+                <li><a href="doctors.html" class="hover:text-yellow-400">Our Doctors</a></li>
+                <li class="relative">
+                    <div class="flex items-center justify-between cursor-pointer hover:text-yellow-400" onclick="toggleContactDropdown()">
+                        <a href="contact.html">Contact</a>
+                        <span class="ml-2 text-[10px]">▼</span>
+                    </div>
+                    <ul id="contact-dropdown-menu" class="hidden bg-[#14532d] absolute left-0 mt-2 w-48 shadow-lg rounded-md">
+                        <li>
+                            <a href="blog.html" class="block px-4 py-2 text-white hover:text-yellow-400">Blog</a>
+                        </li>
+                        <li>
+                            <a href="support.html" class="block px-4 py-2 text-white hover:text-yellow-400">Support Us</a>
+                        </li>
+                    </ul>
+                </li>
+                
+                
+            </ul>
+        </nav>
+        <button onclick="toggleTheme()" class="p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition">
+            🌙
+        </button>
+    </header>
+
+    <!-- Content Section -->
+    <section class="max-w-4xl mx-auto my-10 p-6 bg-white rounded-lg shadow-lg">
+        <h1 class="text-3xl font-bold text-green-900 text-center">Panchakarma Ayurvedic Treatment</h1>
+        <p class="text-lg text-gray-700 mt-4">Panchakarma is an advanced Ayurvedic detoxification therapy that deeply purifies the body, removes accumulated toxins (Ama), and restores the balance of the three doshas—Vata, Pitta, and Kapha. This five-step purification process not only cleanses the body but also rejuvenates the mind and spirit, promoting overall well-being and longevity.</p>
+        
+        <h2 class="text-2xl font-bold text-green-900 mt-6">The Five Stages of Panchakarma</h2>
+        <ul class="list-disc pl-6 mt-2 text-gray-700">
+            <li><strong>Vamana (Therapeutic Emesis)</strong>: Expels excess Kapha and toxins from the respiratory and digestive tract. Beneficial for asthma, allergies, and skin diseases.</li>
+            <li><strong>Virechana (Purgation Therapy)</strong>: Flushes out excessive Pitta from the liver and intestines. Helps with digestive disorders, liver conditions, and acidity.</li>
+            <li><strong>Basti (Medicated Enema Therapy)</strong>: Removes toxins from the colon and nourishes the nervous system. Effective for arthritis, constipation, and hormonal imbalances.</li>
+            <li><strong>Nasya (Nasal Detox Therapy)</strong>: Clears toxins from the head and neck using herbal oils. Useful for sinusitis, migraines, and mental clarity.</li>
+            <li><strong>Raktamokshana (Bloodletting Therapy)</strong>: Removes impure blood to treat skin diseases and hypertension.</li>
+        </ul>
+        
+        <h2 class="text-2xl font-bold text-green-900 mt-6">Why Choose Panchakarma?</h2>
+        <p class="text-lg text-gray-700">Panchakarma is more than just a detoxification therapy—it is a complete rejuvenation process that resets the body and mind. It is ideal for individuals suffering from chronic illnesses, stress, fatigue, and lifestyle disorders.</p>
+        
+        <h2 class="text-2xl font-bold text-green-900 mt-6">Key Advantages of Panchakarma</h2>
+        <ul class="list-disc pl-6 mt-2 text-gray-700">
+            <li>Deep cleanses the body, flushing out accumulated toxins</li>
+            <li>Enhances digestion and strengthens metabolism</li>
+            <li>Boosts immune system function and prevents diseases</li>
+            <li>Balances hormonal levels and nervous system disorders</li>
+            <li>Relieves stress, anxiety, and improves mental clarity</li>
+            <li>Increases energy levels and promotes overall vitality</li>
+        </ul>
+        
+        <h2 class="text-2xl font-bold text-green-900 mt-6">Long-Term Benefits of Panchakarma</h2>
+        <ul class="list-disc pl-6 mt-2 text-gray-700">
+            <li>Promotes healthy skin, hair, and overall radiance</li>
+            <li>Aids in weight management and improves metabolism</li>
+            <li>Helps in the management of chronic pain and inflammatory diseases</li>
+            <li>Supports emotional and mental well-being by reducing stress and anxiety</li>
+            <li>Increases longevity and enhances quality of life</li>
+        </ul>
+        
+        <p class="text-lg text-gray-700 mt-6">Panchakarma is a time-tested Ayurvedic practice that helps restore harmony within the body and mind. It is highly recommended to undergo this therapy under the guidance of an experienced Ayurvedic practitioner to achieve the best results tailored to your unique constitution.</p>
+        
+        <p class="text-lg font-bold text-green-900 mt-6 text-center">Experience the ultimate healing and detoxification with Panchakarma and rejuvenate your life naturally!</p>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white py-6 text-center">
+        <p>&copy; 2025 Ayurveda Wellness. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleDropdown() {
+            const menu = document.getElementById("dropdown-menu");
+            menu.classList.toggle("hidden");
+        }
+        
+        function toggleTheme() {
+            document.body.classList.toggle("bg-gray-900");
+            document.body.classList.toggle("text-white");
+        }
+        function toggleContactDropdown() {
+        const menu = document.getElementById("contact-dropdown-menu");
+        menu.classList.toggle("hidden");
+    }
+    </script>
+</body>
+</html>

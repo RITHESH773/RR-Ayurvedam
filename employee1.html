@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayurvedic Employee Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-100 flex flex-col min-h-screen">
+    
+    <header class="bg-[#14532d] text-white py-4 px-6 flex justify-between items-center">
+        <img src="///C:/Users/admin/Desktop/logoa.png" alt="Ayurveda Logo" class="w-32 h-12 mr-16 rounded-full">
+ 
+        <h1 class="text-3xl font-bold">RR Ayurvedam</h1>
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a href="Home.html" class="hover:text-yellow-400">Home</a></li>
+                <li><a href="about.html" class="hover:text-yellow-400">About Us</a></li>
+                <li class="relative">
+                    <div class="flex items-center justify-between cursor-pointer hover:text-yellow-400" onclick="toggleDropdown()">
+                        <a href="swarnaprashna.html">Swarnaprashna</a>
+                        <span class="ml-2 text-[10px]">▼</span>
+                    </div>
+                    <ul id="dropdown-menu" class="hidden bg-[#14532d] absolute left-0 mt-2 w-48 shadow-lg rounded-md">
+                        <li>
+                            <a href="employee.html" class="block px-4 py-2 text-white hover:text-yellow-400">Employee Page</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="consulting.html" class="hover:text-yellow-400">Consulting</a></li>
+                <li><a href="services.html" class="hover:text-yellow-400">Our Services</a></li>
+                <li><a href="doctors.html" class="hover:text-yellow-400">Our Doctors</a></li>
+                <li class="relative">
+                    <div class="flex items-center justify-between cursor-pointer hover:text-yellow-400" onclick="toggleContactDropdown()">
+                        <a href="contact.html">Contact</a>
+                        <span class="ml-2 text-[10px]">▼</span>
+                    </div>
+                    <ul id="contact-dropdown-menu" class="hidden bg-[#14532d] absolute left-0 mt-2 w-48 shadow-lg rounded-md">
+                        <li>
+                            <a href="blog.html" class="block px-4 py-2 text-white hover:text-yellow-400">Blog</a>
+                        </li>
+                        <li>
+                            <a href="support.html" class="block px-4 py-2 text-white hover:text-yellow-400">Support Us</a>
+                        </li>
+                    </ul>
+                </li>
+                
+                
+            </ul>
+        </nav>
+        <button onclick="toggleTheme()" class="p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition">
+            🌙
+        </button>
+    </header>
+    
+    <div class="max-w-4xl w-full mx-auto bg-white shadow-lg rounded-lg p-4 overflow-hidden flex-grow">
+        <h2 class="text-lg font-bold text-center bg-green-300 text-green-900 py-2 rounded">Ayurvedic Team</h2>
+        <div class="overflow-x-auto">
+            <div class="flex justify-center">
+                <div class="flex justify-center">
+                    <div class="flex justify-center">
+                        <div class="flex justify-center">
+                            <table class="w-11/12 md:w-5/6 lg:w-4/5 border-collapse border border-black mt-2 text-xs md:text-sm rounded-2xl overflow-hidden shadow-lg">
+                                <thead>
+                                    <tr class="bg-green-200 text-green-900 rounded-t-2xl border border-black">
+                                        <th class="border border-black p-2 w-60">Picture</th> <!-- Increased width -->
+                                        <th class="border border-black p-2 w-40">Name</th>
+                                        <th class="border border-black p-2 w-32">Phone</th>
+                                        <th class="border border-black p-2">Email</th>
+                                        <th class="border border-black p-2">Patients</th>
+                                        <th class="border border-black p-2">Status</th>
+                                        <th class="border border-black p-2">Revenue (W)</th>
+                                        <th class="border border-black p-2">Revenue (M)</th>
+                                        <th class="border border-black p-2">Revenue (Y)</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="rounded-b-2xl">
+                                    <tr class="text-center bg-green-50 border border-black">
+                                        <td class="border border-black p-2 w-24">
+                                            <img src="https://via.placeholder.com/50" class="rounded-full mx-auto"> <!-- Adjusted image size -->
+                                        </td>
+                                        <td class="border border-black p-2 w-40 whitespace-nowrap font-semibold">Dr. Anjali Sharma</td>
+                                        <td class="border border-black p-2 w-32 whitespace-nowrap text-gray-600">+91 98765 43210</td>
+                                        <td class="border border-black p-2">anjali@ayurveda.com</td>
+                                        <td class="border border-black p-2">15/20</td>
+                                        <td class="border border-black p-2">
+                                            <select class="border border-black p-1 rounded bg-green-100 text-xs">
+                                                <option>Approved</option>
+                                                <option>Pending</option>
+                                                <option>Not Approved</option>
+                                                <option>Cancelled</option>
+                                            </select>
+                                        </td>
+                                        <td class="border border-black p-2">₹5,000</td>
+                                        <td class="border border-black p-2">₹20,000</td>
+                                        <td class="border border-black p-2">₹2,40,000</td>
+                                    </tr>
+                                    <tr class="text-center bg-green-50 border border-black">
+                                        <td class="border border-black p-2 w-24">
+                                            <img src="https://via.placeholder.com/50" class="rounded-full mx-auto"> <!-- Adjusted image size -->
+                                        </td>
+                                        <td class="border border-black p-2 w-40 whitespace-nowrap font-semibold">Dr. Rajesh Verma</td>
+                                        <td class="border border-black p-2 w-32 whitespace-nowrap text-gray-600">+91 91234 56789</td>
+                                        <td class="border border-black p-2">rajesh@ayurveda.com</td>
+                                        <td class="border border-black p-2">10/15</td>
+                                        <td class="border border-black p-2">
+                                            <select class="border border-black p-1 rounded bg-green-100 text-xs">
+                                                <option>Approved</option>
+                                                <option>Pending</option>
+                                                <option>Not Approved</option>
+                                                <option>Cancelled</option>
+                                            </select>
+                                        </td>
+                                        <td class="border border-black p-2">₹4,000</td>
+                                        <td class="border border-black p-2">₹18,000</td>
+                                        <td class="border border-black p-2">₹2,16,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>                        
+                    </div>                    
+                </div>                
+            </div>                                 
+        </div>
+    </div>
+    
+    <footer class="bg-green-900 text-white py-6 text-center mt-6">
+        <p>&copy; 2025 Ayurveda Wellness. All Rights Reserved.</p>
+        <p>Email: contact@ayurvedawellness.com | Phone: +91 98765 43210</p>
+    </footer>
+
+    <script>
+        function toggleDropdown() {
+            document.getElementById("dropdown-menu").classList.toggle("hidden");
+        }
+        function toggleContactDropdown() {
+            document.getElementById("contact-dropdown-menu").classList.toggle("hidden");
+        }
+        function toggleMobileMenu() {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        }
+    </script>
+</body>
+</html>
