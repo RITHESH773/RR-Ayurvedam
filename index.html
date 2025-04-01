@@ -7,152 +7,101 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="/js/header-loader.js" defer></script>
 
+    
 </head>
 <body class="bg-white">
-    <!-- Popup Modal -->
-    <div id="popup-modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-        <div class="bg-white rounded-lg shadow-lg w-96 md:w-[600px] flex relative">
-            
-            <!-- Left Side Image -->
-            <div class="hidden md:block w-1/2">
-                <img src="./images/ayurvedic-popup.jpg" alt="Ayurvedic Consultation" class="w-full h-full rounded-l-lg">
-            </div>
-            
-            <!-- Right Side Form -->
-            <div class="p-6 w-full md:w-1/2 flex flex-col justify-center">
-                <h2 class="text-2xl font-bold text-green-900 text-center mb-4">Consult with Our Doctor</h2>
-                <form>
-                    <label class="block mb-2 text-gray-700">Your Name</label>
-                    <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Enter your name">
-                    
-                    <label class="block mt-4 mb-2 text-gray-700">Phone Number</label>
-                    <input type="tel" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Enter your phone number">
-                    
-                    <button type="submit" class="mt-6 w-full bg-green-600 hover:bg-green-700 text-white py-2 rounded-lg font-semibold">Submit</button>
-                </form>
-            </div>
-            
-            <!-- Close Button -->
-            <button id="close-popup" class="absolute top-2 right-2 text-gray-600 hover:text-red-500 text-xl">&times;</button>
-        </div>
-    </div>
-
-    
+    <div id="header-container"></div>
     <!-- Header -->
-    <header class="bg-[#14532d] text-white py-4 px-6 flex justify-between items-center">
-        <img src="C:\Users\admin\Desktop\logoa.png" alt="Ayurveda Logo" class="w-32 h-12 mr-16 rounded-full">
- 
-        <h1 class="text-3xl font-bold">RR Ayurvedam</h1>
-        <nav>
-            <ul class="flex space-x-6">
-                <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
-                <li><a href="about.html" class="hover:text-yellow-400">About Us</a></li>
-                <li class="relative">
-                    <div class="flex items-center justify-between cursor-pointer hover:text-yellow-400" onclick="toggleDropdown()">
-                        <a href="swarnaprashna.html">Swarnaprashna</a>
-                        <span class="ml-2 text-[10px]">▼</span>
-                    </div>
-                    <ul id="dropdown-menu" class="hidden bg-[#14532d] absolute left-0 mt-2 w-48 shadow-lg rounded-md">
-                        <li>
-                            <a href="employee.html" class="block px-4 py-2 text-white hover:text-yellow-400">Employee Page</a>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="consulting.html" class="hover:text-yellow-400">Consulting</a></li>
-                <li><a href="services.html" class="hover:text-yellow-400">Our Services</a></li>
-                <li><a href="doctors.html" class="hover:text-yellow-400">Our Doctors</a></li>
-                <li class="relative">
-                    <div class="flex items-center justify-between cursor-pointer hover:text-yellow-400" onclick="toggleContactDropdown()">
-                        <a href="contact.html">Contact</a>
-                        <span class="ml-2 text-[10px]">▼</span>
-                    </div>
-                    <ul id="contact-dropdown-menu" class="hidden bg-[#14532d] absolute left-0 mt-2 w-48 shadow-lg rounded-md">
-                        <li>
-                            <a href="blog.html" class="block px-4 py-2 text-white hover:text-yellow-400">Blog</a>
-                        </li>
-                        <li>
-                            <a href="support.html" class="block px-4 py-2 text-white hover:text-yellow-400">Support Us</a>
-                        </li>
-                    </ul>
-                </li>
-                
-                
-            </ul>
-        </nav>
-        <button onclick="toggleTheme()" class="p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition">
-            🌙
-        </button>
-    </header>
-    
     
     <!-- Hero Section with Image Slider -->
-    <section class="relative w-full">
+    <section class="relative w-full max-w-screen-xl mx-auto">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./images/Newl.png" alt="Ayurvedic Treatment" class="w-full h-[500px] object-cover"></div>
-                <div class="swiper-slide"><img src="./images/Exp.png" alt="Herbal Remedies" class="w-full h-[500px] object-cover"></div>
-                <div class="swiper-slide"><img src="./images/post1.png" alt="Healing Practices" class="w-full h-[500px] object-cover"></div>
+                <div class="swiper-slide">
+                    <img src="./images/Newl.png" alt="Ayurvedic Treatment"
+                        class="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] object-contain md:object-cover">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/Exp.png" alt="Herbal Remedies"
+                        class="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] object-cover">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/post1.png" alt="Healing Practices"
+                        class="w-full h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] object-cover">
+                </div>
             </div>
+            <!-- Pagination and Navigation -->
             <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+
         </div>
     </section>
     
-   <!-- About Us -->
-   <section id="about" class="py-16 bg-white flex flex-col md:flex-row items-center px-10">
-    <div class="md:w-1/2">
-        <img src="./images/Ayu.png" class="squared-lg shadow-lg" alt="About Ayurveda">
-    </div>
-    <div class="md:w-1/2 md:pl-10 mt-6 md:mt-0">
+    
+    
+  <!-- About Us -->
+<section id="about" class="pt-16 bg-white pb-6 sm:px-10 lg:px-20 text-center">
+    <div class="max-w-3xl mx-auto">
         <h2 class="text-4xl font-bold text-green-900">About Us</h2>
-        <p class="mt-4 text-gray-700">Ayurveda is a holistic system of medicine that treats the body, mind, and spirit, aiming to achieve balance and harmony in all aspects of life. It emphasizes the importance of diet, lifestyle, detoxification, and natural therapies in promoting health and preventing illness. By understanding one’s unique constitution and making lifestyle adjustments accordingly, Ayurveda offers a comprehensive approach to well-being and longevity.</p>
-        <a href="#about" class="mt-6 inline-block bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-full">Learn More</a>
+        <p class="mt-4 text-gray-700 leading-relaxed">
+            Ayurveda is a holistic system of medicine that treats the body, mind, and spirit, aiming to achieve balance and harmony in all aspects of life. 
+            It emphasizes the importance of diet, lifestyle, detoxification, and natural therapies in promoting health and preventing illness. 
+            By understanding one’s unique constitution and making lifestyle adjustments accordingly, Ayurveda offers a comprehensive approach to well-being and longevity.
+        </p>
+        <a href="about.html" class="mt-6 inline-block bg-[#14532d] text-white px-6 py-3 rounded-full shadow-md hover:bg-green-700 transition duration-300">
+            Learn More
+        </a>
     </div>
 </section>
 
+
 <!-- Our Services -->
-<section id="services" class="py-16 bg-white text-center">
+<section id="services" class="py-6 bg-white text-center">
     <h2 class="text-4xl font-bold text-green-900">Our Services</h2>
     <div class="grid md:grid-cols-3 gap-8 px-10 mt-8">
-        <a href="panchakarma.html">
-            <div class="p-6 shadow-lg rounded-lg bg-green-100 hover:bg-green-200 transition duration-300 cursor-pointer">
+        <a href="panchakarma.html" class="h-full">
+            <div class="p-6 shadow-lg rounded-lg bg-green-100 hover:bg-green-200 transition duration-300 cursor-pointer h-full flex flex-col justify-between">
                 <img src="./images/panchakarma.png" alt="Panchakarma" class="w-16 h-16 mx-auto mb-4">
                 <h3 class="text-2xl font-semibold">Panchakarma</h3>
                 <p class="mt-2 text-gray-700">A detoxification therapy that rejuvenates your body and mind.</p>
             </div>
-        </a>  
-        <a href="swarnaprashna.html">         
-            <div class="p-6 shadow-lg rounded-lg bg-green-100 hover:bg-green-200 transition duration-300 cursor-pointer">
+        </a>    
+        
+        <a href="swarnaprashna.html" class="h-full">       
+            <div class="p-6 shadow-lg rounded-lg bg-green-100 hover:bg-green-200 transition duration-300 cursor-pointer h-full flex flex-col justify-between">
                 <img src="./images/swarnaprasana.png" alt="Swarnaprashna" class="w-16 h-16 mx-auto mb-4">
                 <h3 class="text-2xl font-semibold">Swarnaprashna</h3>
                 <p class="mt-2 text-gray-700">Swarnaprashna is an Ayurvedic immunization therapy that enhances immunity, memory, and overall well-being in children.</p>
             </div>
         </a> 
-        <a href="tarpanam.html"> 
-            <div class="p-6 shadow-lg rounded-lg bg-green-100 hover:bg-green-200 transition duration-300 cursor-pointer">
+        
+        <a href="tarpanam.html" class="h-full"> 
+            <div class="p-6 shadow-lg rounded-lg bg-green-100 hover:bg-green-200 transition duration-300 cursor-pointer h-full flex flex-col justify-between">
                 <img src="./images/tarpanam.png" alt="Tarpanam" class="w-16 h-16 mx-auto mb-4">
                 <h3 class="text-2xl font-semibold">Tarpanam</h3>
                 <p class="mt-2 text-gray-700">Tarpanam is a traditional Ayurvedic therapy that nourishes and rejuvenates the eyes using medicated ghee.</p>
             </div>
         </a> 
-        <a href="uro vista.html">
-            <div class="p-6 shadow-lg rounded-lg bg-green-100 hover:bg-green-200 transition duration-300 cursor-pointer">
+        
+        <a href="urovista.html" class="h-full">
+            <div class="p-6 shadow-lg rounded-lg bg-green-100 hover:bg-green-200 transition duration-300 cursor-pointer h-full flex flex-col justify-between">
                 <img src="./images/urovista.png" alt="Uro Vista" class="w-16 h-16 mx-auto mb-4">
                 <h3 class="text-2xl font-semibold">Uro Vista</h3>
                 <p class="mt-2 text-gray-700">Uro Vista Treatment offers holistic Ayurvedic solutions for urinary and kidney health, promoting natural healing and balance.</p>
             </div>
         </a>
-        <a href="jaluka.html">
-            <div class="p-6 shadow-lg rounded-lg bg-green-100 hover:bg-green-200 transition duration-300 cursor-pointer">
+
+        <a href="jaluka.html" class="h-full">
+            <div class="p-6 shadow-lg rounded-lg bg-green-100 hover:bg-green-200 transition duration-300 cursor-pointer h-full flex flex-col justify-between">
                 <img src="./images/jaluka.png" alt="Jaluka" class="w-16 h-16 mx-auto mb-4">
                 <h3 class="text-2xl font-semibold">Jaluka</h3>
                 <p class="mt-2 text-gray-700">Jaluka treatment (Leech Therapy) is an Ayurvedic blood purification technique that helps detoxify and promote healing naturally.</p>
             </div>
         </a>
-        <a href="siro takradra.html">
-            <div class="p-6 shadow-lg rounded-lg bg-green-100">
+
+        <a href="sirotakradra.html" class="h-full">
+            <div class="p-6 shadow-lg rounded-lg bg-green-100 hover:bg-green-200 transition duration-300 cursor-pointer h-full flex flex-col justify-between">
                 <img src="./images/sirotakradara.png" alt="Siro Takradara" class="w-16 h-16 mx-auto mb-4">
                 <h3 class="text-2xl font-semibold">Siro Takradara</h3>
                 <p class="mt-2 text-gray-700">Shiro Takradhara is a relaxing Ayurvedic therapy where medicated buttermilk is poured over the forehead to relieve stress, insomnia, and migraines.</p>
@@ -162,14 +111,14 @@
 </section>
 
 
-<section class="py-16 bg-gray-100 text-center">
+<!-- <section class="py-16 bg-gray-100 text-center">
     <h2 class="text-3xl font-bold text-gray-800">Broucher</h2>
     <p class="mt-4 text-gray-600 max-w-3xl mx-auto">Please download this broucher to know more about our services</p>
     <a href="./pdf/Ayurvedic_Brochure.pdf" download="Ayurvedic_Brochure.pdf"
-        class="mt-6 inline-block bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 text-lg rounded shadow-md transition duration-300">
+        class="mt-6 inline-block bg-[#14532d] text-white px-4 py-2 text-lg rounded shadow-md transition duration-300">
         📥 Download
     </a>
-</section>
+</section> -->
 
 
 
@@ -186,104 +135,50 @@
 </section>
 
 <!-- Footer -->
-<footer id="contact" class="bg-green-900 text-white py-6 text-center relative">
-<p>&copy; 2025 Ayurveda Wellness. All Rights Reserved.</p>
-<p>Email: contact@ayurvedawellness.com | Phone: +91 98765 43210</p>
-<!-- Social Media Icons -->
-<div class="flex justify-center space-x-6 mt-4">
-<a href="https://facebook.com" target="_blank" class="text-white text-2xl hover:text-blue-500">
-    <i class="fa-brands fa-facebook"></i>
-</a>
-<a href="https://instagram.com" target="_blank" class="text-white text-2xl hover:text-pink-500">
-    <i class="fa-brands fa-instagram"></i>
-</a>
-<a href="https://twitter.com" target="_blank" class="text-white text-2xl hover:text-gray-900">
-    <i class="fa-brands fa-x-twitter"></i>
-</a>
-</div>
+ <div id="footer-container"></div>
 
-<a href="contact.html" class="absolute right-4 bottom-4 bg-green-700 hover:bg-green-800 text-white p-3 rounded-full shadow-lg transition duration-300">
-📞
-</a>
-</footer>
 
     
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const popup = document.getElementById("popup-modal");
-            const closePopup = document.getElementById("close-popup");
-
-            // Show popup immediately on page load
-            popup.classList.remove("hidden");
-
-            // Close popup after 40 seconds
-            setTimeout(() => {
-                popup.classList.add("hidden");
-            }, 40000);
-
-            // Close popup when clicking the close button
-            closePopup.addEventListener("click", () => {
-                popup.classList.add("hidden");
-            });
-        });
-        function toggleDropdown() {
-            document.getElementById("dropdown-menu").classList.toggle("hidden");
-        }
-        function toggleTheme() {
-            document.body.classList.toggle('bg-gray-900');
-            document.body.classList.toggle('text-white');
-        }
-        function toggleContactDropdown() {
-        const menu = document.getElementById("contact-dropdown-menu");
-        menu.classList.toggle("hidden");
-    }
-        // Swarnaprashna Dropdown Toggle
-        function toggleDropdown(id) {
-            document.getElementById(id).classList.toggle("hidden");
-        }
-
-        // Contact Dropdown Toggle
-        document.addEventListener("DOMContentLoaded", function () {
-            const contactBtn = document.getElementById("contact-btn");
-            const contactDropdown = document.getElementById("contact-dropdown");
-
-            contactBtn.addEventListener("click", function (event) {
-                event.stopPropagation();
-                contactDropdown.classList.toggle("hidden");
-            });
-
-            // Hide dropdown when clicking outside
-            document.addEventListener("click", function (event) {
-                if (!contactDropdown.contains(event.target) && !contactBtn.contains(event.target)) {
-                    contactDropdown.classList.add("hidden");
-                }
-            });
-        });
-
-        // Dark Mode Toggle
-        function toggleTheme() {
-            document.body.classList.toggle('bg-gray-900');
-            document.body.classList.toggle('text-white');
-        }
+        
 
         // Swiper Slider Initialization
         var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 10,
+    centeredSlides: false, // Set to false to align properly
+    loop: true, // Ensures continuous loop
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        1024: {
+            slidesPerView: 1,
             spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
+        },
+    },
+});
+
+
+
+
     </script>
 </body>
 </html>

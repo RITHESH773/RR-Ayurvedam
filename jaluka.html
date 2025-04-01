@@ -5,53 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaluka Ayurvedic Treatment</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/header-loader.js" defer></script>
+
 </head>
 <body class="bg-gray-100 text-gray-900">
-    <!-- Navigation Bar -->
-    <header class="bg-[#14532d] text-white py-4 px-6 flex justify-between items-center">
-        <img src="C:\Users\admin\Desktop\logoa.png" alt="Ayurveda Logo" class="w-32 h-12 mr-16 rounded-full">
- 
-        <h1 class="text-3xl font-bold">RR Ayurvedam</h1>
-        <nav>
-            <ul class="flex space-x-6">
-                <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
-                <li><a href="about.html" class="hover:text-yellow-400">About Us</a></li>
-                <li class="relative">
-                    <div class="flex items-center justify-between cursor-pointer hover:text-yellow-400" onclick="toggleDropdown()">
-                        <a href="swarnaprashna.html">Swarnaprashna</a>
-                        <span class="ml-2 text-[10px]">▼</span>
-                    </div>
-                    <ul id="dropdown-menu" class="hidden bg-[#14532d] absolute left-0 mt-2 w-48 shadow-lg rounded-md">
-                        <li>
-                            <a href="employee.html" class="block px-4 py-2 text-white hover:text-yellow-400">Employee Page</a>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="consulting.html" class="hover:text-yellow-400">Consulting</a></li>
-                <li><a href="services.html" class="hover:text-yellow-400">Our Services</a></li>
-                <li><a href="doctors.html" class="hover:text-yellow-400">Our Doctors</a></li>
-                <li class="relative">
-                    <div class="flex items-center justify-between cursor-pointer hover:text-yellow-400" onclick="toggleContactDropdown()">
-                        <a href="contact.html">Contact</a>
-                        <span class="ml-2 text-[10px]">▼</span>
-                    </div>
-                    <ul id="contact-dropdown-menu" class="hidden bg-[#14532d] absolute left-0 mt-2 w-48 shadow-lg rounded-md">
-                        <li>
-                            <a href="blog.html" class="block px-4 py-2 text-white hover:text-yellow-400">Blog</a>
-                        </li>
-                        <li>
-                            <a href="support.html" class="block px-4 py-2 text-white hover:text-yellow-400">Support Us</a>
-                        </li>
-                    </ul>
-                </li>
-                
-                
-            </ul>
-        </nav>
-        <button onclick="toggleTheme()" class="p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition">
-            🌙
-        </button>
-    </header>
+    <div id="header-container"></div>
+
     <!-- Page Heading -->
     <section class="max-w-4xl mx-auto my-10 p-6 bg-white shadow-lg rounded-lg">
         <h1 class="text-3xl font-bold text-green-900 text-center">Jaluka Ayurvedic Treatment</h1>
@@ -111,10 +70,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-green-900 text-white text-center py-6 mt-10">
-        <p>&copy; 2025 Ayurveda Wellness. All Rights Reserved.</p>
-        <p>Email: contact@ayurvedawellness.com | Phone: +91 98765 43210</p>
-    </footer>
+    <div id="footer-container"></div>
 
     <!-- Scripts -->
     <script>

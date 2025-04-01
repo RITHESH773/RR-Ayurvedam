@@ -5,56 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulting - Ayurvedic Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/header-loader.js" defer></script>
+
 </head>
 <body class="bg-gray-100 text-gray-900">
     <!-- Navbar -->
-<!-- Header -->
-<header class="bg-[#14532d] text-white py-4 px-6 flex justify-between items-center">
-    <img src="C:\Users\admin\Desktop\logoa.png" alt="Ayurveda Logo" class="w-32 h-12 mr-16 rounded-full">
 
-    <h1 class="text-3xl font-bold">RR Ayurvedam</h1>
-    <nav>
-        <ul class="flex space-x-6">
-            <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
-            <li><a href="about.html" class="hover:text-yellow-400">About Us</a></li>
-            <li class="relative">
-                <div class="flex items-center justify-between cursor-pointer hover:text-yellow-400" onclick="toggleDropdown()">
-                    <a href="swarnaprashna.html">Swarnaprashna</a>
-                    <span class="ml-2 text-[10px]">▼</span>
-                </div>
-                <ul id="dropdown-menu" class="hidden bg-[#14532d] absolute left-0 mt-2 w-48 shadow-lg rounded-md">
-                    <li>
-                        <a href="employee.html" class="block px-4 py-2 text-white hover:text-yellow-400">Employee Page</a>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="consulting.html" class="hover:text-yellow-400">Consulting</a></li>
-            <li><a href="services.html" class="hover:text-yellow-400">Our Services</a></li>
-            <li><a href="doctors.html" class="hover:text-yellow-400">Our Doctors</a></li>
-            <li class="relative">
-                <div class="flex items-center justify-between cursor-pointer hover:text-yellow-400" onclick="toggleContactDropdown()">
-                    <a href="contact.html">Contact</a>
-                    <span class="ml-2 text-[10px]">▼</span>
-                </div>
-                <ul id="contact-dropdown-menu" class="hidden bg-[#14532d] absolute left-0 mt-2 w-48 shadow-lg rounded-md">
-                    <li>
-                        <a href="blog.html" class="block px-4 py-2 text-white hover:text-yellow-400">Blog</a>
-                    </li>
-                    <li>
-                        <a href="support.html" class="block px-4 py-2 text-white hover:text-yellow-400">Support Us</a>
-                    </li>
-                </ul>
-            </li>
-            
-            
-        </ul>
-    </nav>
-    <button onclick="toggleTheme()" class="p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition">
-        🌙
-    </button>
-</header>
+    <div id="header-container"></div>
 
-    
+
     <section class="max-w-5xl mx-auto my-10 p-8 bg-white shadow-lg rounded-lg">
         <h2 class="text-2xl font-semibold text-green-900">About Our Consultation Services</h2>
         <p class="mt-4 text-gray-700">
@@ -79,31 +38,9 @@
             <li>Provides natural and sustainable healing solutions.</li>
         </ul>
         
-        <h2 class="text-2xl font-semibold text-green-900 mt-6">Book Your Consultation</h2>
-        <p class="mt-4 text-gray-700">
-            Ready to start your Ayurvedic wellness journey? Book your consultation with our expert practitioners today and take the first step towards a healthier, balanced life.
-        </p>
-        <div class="text-center mt-6">
-            <a href="schedule.html" class="bg-green-900 text-white px-6 py-3 rounded-lg shadow-md hover:bg-green-700">Schedule an Appointment</a>
-        </div>
     </section>
     
-    <footer class="bg-green-900 text-white text-center py-6 mt-10">
-        <p>&copy; 2025 Ayurveda Wellness. All Rights Reserved.</p>
-        <p>Email: contact@ayurvedawellness.com | Phone: +91 98765 43210</p>
-    </footer>
-    <script>
-        function toggleDropdown() {
-            document.getElementById("dropdown-menu").classList.toggle("hidden");
-        }
-        function toggleTheme() {
-                document.body.classList.toggle('bg-gray-900');
-                document.body.classList.toggle('text-white');
-            }
-            function toggleContactDropdown() {
-            const menu = document.getElementById("contact-dropdown-menu");
-            menu.classList.toggle("hidden");
-        }
-    </script>
+    <div id="footer-container"></div>
+   
 </body>
 </html>

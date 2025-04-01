@@ -5,55 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swarnaprashna - The Golden Immunity Booster</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/js/header-loader.js" defer></script>
 </head>
 <body class="bg-green-100">
 
     <!-- Navbar -->
     <!-- Header -->
-    <header class="bg-[#14532d] text-white py-4 px-6 flex justify-between items-center">
-        <img src="C:\Users\admin\Desktop\logoa.png" alt="Ayurveda Logo" class="w-32 h-12 mr-16 rounded-full">
- 
-        <h1 class="text-3xl font-bold">RR Ayurvedam</h1>
-        <nav>
-            <ul class="flex space-x-6">
-                <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
-                <li><a href="about.html" class="hover:text-yellow-400">About Us</a></li>
-                <li class="relative">
-                    <div class="flex items-center justify-between cursor-pointer hover:text-yellow-400" onclick="toggleDropdown()">
-                        <a href="swarnaprashna.html">Swarnaprashna</a>
-                        <span class="ml-2 text-[10px]">▼</span>
-                    </div>
-                    <ul id="dropdown-menu" class="hidden bg-[#14532d] absolute left-0 mt-2 w-48 shadow-lg rounded-md">
-                        <li>
-                            <a href="employee.html" class="block px-4 py-2 text-white hover:text-yellow-400">Employee Page</a>
-                        </li>
-                    </ul>
-                </li>
-                <li><a href="consulting.html" class="hover:text-yellow-400">Consulting</a></li>
-                <li><a href="services.html" class="hover:text-yellow-400">Our Services</a></li>
-                <li><a href="doctors.html" class="hover:text-yellow-400">Our Doctors</a></li>
-                <li class="relative">
-                    <div class="flex items-center justify-between cursor-pointer hover:text-yellow-400" onclick="toggleContactDropdown()">
-                        <a href="contact.html">Contact</a>
-                        <span class="ml-2 text-[10px]">▼</span>
-                    </div>
-                    <ul id="contact-dropdown-menu" class="hidden bg-[#14532d] absolute left-0 mt-2 w-48 shadow-lg rounded-md">
-                        <li>
-                            <a href="blog.html" class="block px-4 py-2 text-white hover:text-yellow-400">Blog</a>
-                        </li>
-                        <li>
-                            <a href="support.html" class="block px-4 py-2 text-white hover:text-yellow-400">Support Us</a>
-                        </li>
-                    </ul>
-                </li>
-                
-                
-            </ul>
-        </nav>
-        <button onclick="toggleTheme()" class="p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition">
-            🌙
-        </button>
-    </header>
+    <div id="header-container"></div>
    
 
     <!-- Swarnaprashna Content -->
@@ -91,81 +49,164 @@
             <p class="mt-4 text-gray-700">Swarnaprashna consists of purified gold (Swarnabhasma) mixed with honey, ghee, and herbal extracts. It is given on specific days, particularly on **Pushya Nakshatra**, to enhance its efficacy. This unique blend nourishes the brain, improves digestion, and builds strong immunity.</p>
         </div>
 
-        <!-- Our Locations Section -->
+     <!-- Our Locations Section -->
     <div class="max-w-4xl mx-auto py-10">
         <h2 class="text-2xl font-bold text-center mb-6">Our Locations</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div class="flex items-center justify-between bg-white shadow-md p-4 rounded-lg">
                 <div class="flex items-center">
                     <span class="text-gray-600 text-lg mr-2">📍</span>
-                    <span class="font-semibold">Narayanguda (Hyderabad)</span>
+                    <span class="font-semibold">Madhapur(Hyderabad)</span>
                 </div>
                 <span class="text-xl font-bold">+</span>
             </div>
             <div class="flex items-center justify-between bg-white shadow-md p-4 rounded-lg">
                 <div class="flex items-center">
                     <span class="text-gray-600 text-lg mr-2">📍</span>
-                    <span class="font-semibold">Banjara Hills (Hyderabad)</span>
+                    <span class="font-semibold">Golden temple (Hyderabad)</span>
                 </div>
                 <span class="text-xl font-bold">+</span>
             </div>
             <div class="flex items-center justify-between bg-white shadow-md p-4 rounded-lg">
                 <div class="flex items-center">
                     <span class="text-gray-600 text-lg mr-2">📍</span>
-                    <span class="font-semibold">Tarnaka (Secunderabad)</span>
+                    <span class="font-semibold">Medak (Telangana)</span>
                 </div>
                 <span class="text-xl font-bold">+</span>
             </div>
             <div class="flex items-center justify-between bg-white shadow-md p-4 rounded-lg">
                 <div class="flex items-center">
                     <span class="text-gray-600 text-lg mr-2">📍</span>
-                    <span class="font-semibold">Vijayawada</span>
+                    <span class="font-semibold">Vijayawada(Andhra Pradesh)</span>
                 </div>
                 <span class="text-xl font-bold">+</span>
             </div>
             <div class="flex items-center justify-between bg-white shadow-md p-4 rounded-lg">
                 <div class="flex items-center">
                     <span class="text-gray-600 text-lg mr-2">📍</span>
-                    <span class="font-semibold">Kurnool</span>
+                    <span class="font-semibold">Vishakapatnam(Andhra Pradesh)</span>
                 </div>
                 <span class="text-xl font-bold">+</span>
             </div>
             <div class="flex items-center justify-between bg-white shadow-md p-4 rounded-lg">
                 <div class="flex items-center">
                     <span class="text-gray-600 text-lg mr-2">📍</span>
-                    <span class="font-semibold">Kurnool</span>
+                    <span class="font-semibold">Tadepalligudam(Andhra Pradesh)</span>
                 </div>
                 <span class="text-xl font-bold">+</span>
             </div>
+            <div class="flex items-center justify-between bg-white shadow-md p-4 rounded-lg">
+                <div class="flex items-center">
+                    <span class="text-gray-600 text-lg mr-2">📍</span>
+                    <span class="font-semibold">Amalapuram(Andhra Pradesh)</span>
+                </div>
+                <span class="text-xl font-bold">+</span>
+            </div>
+            <div class="flex items-center justify-between bg-white shadow-md p-4 rounded-lg">
+                <div class="flex items-center">
+                    <span class="text-gray-600 text-lg mr-2">📍</span>
+                    <span class="font-semibold">Kakinada(Andhra Pradesh)</span>
+                </div>
+                <span class="text-xl font-bold">+</span>
+            </div>
+            <div class="flex items-center justify-between bg-white shadow-md p-4 rounded-lg">
+                <div class="flex items-center">
+                    <span class="text-gray-600 text-lg mr-2">📍</span>
+                    <span class="font-semibold">Kodada(Andhra Pradesh)</span>
+                </div>
+                <span class="text-xl font-bold">+</span>
+            </div>
+            <div class="flex items-center justify-between bg-white shadow-md p-4 rounded-lg">
+                <div class="flex items-center">
+                    <span class="text-gray-600 text-lg mr-2">📍</span>
+                    <span class="font-semibold">Khammam(Telangana)</span>
+                </div>
+                <span class="text-xl font-bold">+</span>
+            </div>
+            <div class="flex items-center justify-between bg-white shadow-md p-4 rounded-lg">
+                <div class="flex items-center">
+                    <span class="text-gray-600 text-lg mr-2">📍</span>
+                    <span class="font-semibold">Nizamabad(Telangana)</span>
+                </div>
+                <span class="text-xl font-bold">+</span>
+            </div>
+            <div class="flex items-center justify-between bg-white shadow-md p-4 rounded-lg">
+                <div class="flex items-center">
+                    <span class="text-gray-600 text-lg mr-2">📍</span>
+                    <span class="font-semibold">Oldcity(Hyderabad)</span>
+                </div>
+                <span class="text-xl font-bold">+</span>
+            </div>
+            <div class="flex items-center justify-between bg-white shadow-md p-4 rounded-lg">
+                <div class="flex items-center">
+                    <span class="text-gray-600 text-lg mr-2">📍</span>
+                    <span class="font-semibold">Kamareddy(Telangana)</span>
+                </div>
+                <span class="text-xl font-bold">+</span>
+            </div>
+            <div class="flex items-center justify-between bg-white shadow-md p-4 rounded-lg">
+                <div class="flex items-center">
+                    <span class="text-gray-600 text-lg mr-2">📍</span>
+                    <span class="font-semibold">Yella reddy(Telangana)</span>
+                </div>
+                <span class="text-xl font-bold">+</span>
+            </div>
+            <div class="flex items-center justify-between bg-white shadow-md p-4 rounded-lg">
+                <div class="flex items-center">
+                    <span class="text-gray-600 text-lg mr-2">📍</span>
+                    <span class="font-semibold">Anathaghiri(Telangana)</span>
+                </div>
+                <span class="text-xl font-bold">+</span>
+            </div>
+            <div class="flex items-center justify-between bg-white shadow-md p-4 rounded-lg">
+                <div class="flex items-center">
+                    <span class="text-gray-600 text-lg mr-2">📍</span>
+                    <span class="font-semibold">Ameerpet(Hyderabad)</span>
+                </div>
+                <span class="text-xl font-bold">+</span>
+            </div>
+            <div class="flex items-center justify-between bg-white shadow-md p-4 rounded-lg">
+                <div class="flex items-center">
+                    <span class="text-gray-600 text-lg mr-2">📍</span>
+                    <span class="font-semibold">Shankarpalli(Telangana)</span>
+                </div>
+                <span class="text-xl font-bold">+</span>
+            </div>
+            <div class="flex items-center justify-between bg-white shadow-md p-4 rounded-lg">
+                <div class="flex items-center">
+                    <span class="text-gray-600 text-lg mr-2">📍</span>
+                    <span class="font-semibold">Narayan khed(Telangana)</span>
+                </div>
+                <span class="text-xl font-bold">+</span>
+            </div>
+            <div class="flex items-center justify-between bg-white shadow-md p-4 rounded-lg">
+                <div class="flex items-center">
+                    <span class="text-gray-600 text-lg mr-2">📍</span>
+                    <span class="font-semibold">Attapur(Telangana)</span>
+                </div>
+                <span class="text-xl font-bold">+</span>
+            </div>
+            <div class="flex items-center justify-between bg-white shadow-md p-4 rounded-lg">
+                <div class="flex items-center">
+                    <span class="text-gray-600 text-lg mr-2">📍</span>
+                    <span class="font-semibold">Mamidada(Andhra Pradesh)</span>
+                </div>
+                <span class="text-xl font-bold">+</span>
+            </div>
+            <div class="flex items-center justify-between bg-white shadow-md p-4 rounded-lg">
+                <div class="flex items-center">
+                    <span class="text-gray-600 text-lg mr-2">📍</span>
+                    <span class="font-semibold">Ramapuram</span>
+                </div>
+                <span class="text-xl font-bold">+</span>
+            </div>
+   
         </div>
     </div>
-
-
-        <!-- Registration Button -->
-        <div class="text-center mt-8">
-            <a href="form.html" class="bg-green-600 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-green-700 transition">
-                Register for Swarnaprashna
-            </a>
-        </div>
-    </div>
+</div>
+ 
     <!-- Footer -->
-    <footer id="contact" class="bg-green-900 text-white py-6 text-center">
-        <p>&copy; 2025 Ayurveda Wellness. All Rights Reserved.</p>
-        <p>Email: contact@ayurvedawellness.com | Phone: +91 98765 43210</p>
-    </footer>
-    <script>
-        function toggleDropdown() {
-            document.getElementById("dropdown-menu").classList.toggle("hidden");
-        }
-        function toggleTheme() {
-                document.body.classList.toggle('bg-gray-900');
-                document.body.classList.toggle('text-white');
-            }
-            function toggleContactDropdown() {
-            const menu = document.getElementById("contact-dropdown-menu");
-            menu.classList.toggle("hidden");
-        }
-    </script>
+    <div id="footer-container"></div>
 
 </body>
 </html>
